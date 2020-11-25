@@ -80,7 +80,7 @@ const logear = async (req,res =response)=>{
             const token = await generarJWT(usuarioDB.id);
     res.json({
         ok:true,
-        body:  usuarioDB,
+        usuario:  usuarioDB,
         token
         
         });
